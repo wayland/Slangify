@@ -1,0 +1,19 @@
+use	v6.e.PREVIEW;
+
+use experimental :rakuast;
+
+use Test;
+
+BEGIN %*ENV<RAKUDO_RAKUAST> = 1;
+
+use lib 't';
+
+use RakuCommonTest;
+
+BEGIN say "RakuCommonTest loaded";
+
+plan 1;
+
+lives-ok(2+2, 'Managed to do an infix (an expression) without dying');
+
+# vim: expandtab shiftwidth=4

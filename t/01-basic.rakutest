@@ -10,12 +10,4 @@ sub pass?(|c) { pass |c }
 plan 1;
 pass? "Successfully slanged";
 
-use RakuCommonTest;
-
-BEGIN say "RakuCommonTest loaded";
-
-plan 1;
-
-lives-ok(2+2, 'Managed to do an infix (an expression) without dying');
-
 # vim: expandtab shiftwidth=4
