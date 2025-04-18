@@ -17,3 +17,4 @@ plan 1;
 lives-ok(2+2, 'Managed to do an infix (an expression) without dying');
 
 # vim: expandtab shiftwidth=4
+
